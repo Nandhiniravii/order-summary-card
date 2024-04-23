@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link href = "https://fonts.google.com/specimen/Red+Hat+Display" rel = "stylesheet">
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /* .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      } */
+      .container-image {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+      }
+      
+     body {
+        font-family: "Red Hat Display";
+        background-color: hsl(225, 100%, 94%);       
+       
+      }
+      .parent{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: auto;
+        border-radius: 10%;
+      
+      }
+      .container{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        position: absolute;  
+        top: 15%;   
+        background-color: white;
+        border-radius: 10px;
+        width: 450px;
+      }
+    
+
+      .plan{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        justify-content: space-around;
+        background-color: hsl(225, 100%, 98%);
+        border-radius: 10px;
+      }
+
+      .plan img{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        margin: auto 0;
+      }
+      .plan a{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-right: 10%;
+      }
+
+      .annual-plan{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 60px;
+        
+      }
+      .annual-plan p{
+        font-weight: 400;
+        margin: 0 ;
+        margin-bottom: 5px;
+      }
+     
+      
+      .message{
+        text-align: center;
+      }
+      
+      .button1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20vw;
+        border: none;
+        padding: 15px;
+        text-align: center;
+        margin-top: 20px;
+        background-color: hsl(224, 28%, 52%);
+        border-radius: 10px;
+        width: 100;
+        font-style: bold;
+        
+      }
+      .button2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20vw;
+        border: none;
+        padding: 15px;
+        text-align: center;
+        margin-top: auto;
+        font-style: bold;
+        
+      }
+
+      .button1:hover{
+        cursor: pointer;
+      }
+      .button2:hover{
+        cursor: pointer;
+      }
+       
+    
+    </style>
+  </head>
+  <body>
+    <div class = "parent">   
+      <img src= "images/pattern-background-desktop.svg" alt = "background image">
+    <div class = "container">
+     
+        <img 
+          src="./images/illustration-hero.svg"
+          class="container-image"
+          alt="Illustration of a person listening to music"
+        />
+      
+      <div class = "message"> 
+        <h2 style = "font-weight: 700">Order Summary</h2>
+        <p style = "font-size: 16px ; margin-left: 100px; margin-right: 100px;" >
+          You can now listen to millions of songs,audiobooks, and podcasts on
+          any device anywhere you like!</p>
+        </p>
+      </div>      
+      <div class = "plan">
+        <img src = "images/icon-music.svg" alt = "music icon">
+      <div class = "annual-plan">
+        <h3> Annual plan</h3>
+        <p >$59.99/year</p>
+      </div>
+      <a href ="#">change</a>
+    </div>
+       <div>
+        <button1 class = "button1">Proceed to Payment</button1>
+        <button2 class = "button2">Cancel Order</button2>
+      </div>
+
+    </div>
+    
+  </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Nandhini Ravichandran</a>.
+    </div> -->
+  </body>
+</html>
